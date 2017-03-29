@@ -1,0 +1,17 @@
+<Dictionary>
+    <Words>
+        <Recognized>
+            <Word>oid</Word>
+        </Recognized>
+        <Unrecognized>
+        </Unrecognized>
+        <DiscreteExceptions>
+            <Term>filename</Term> 
+        </DiscreteExceptions>
+    </Words>
+    <Acronyms>
+        <CasingExceptions>
+            <Acronym>SNMP</Acronym>
+        </CasingExceptions>
+    </Acronyms>
+</Dictionary>

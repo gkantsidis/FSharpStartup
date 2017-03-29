@@ -1,0 +1,425 @@
+source https://nuget.org/api/v2
+
+// Type provider for Apiary.io
+/// !Label: ApiaryProvider
+/// !Web: http://fsprojects.github.io/ApiaryProvider/
+/// !Source: https://github.com/fsprojects/ApiaryProvider
+//nuget ApiaryProvider
+
+// This package contains the C.math.NET library that implements several C Standard mathematical functions that are missing from the .NET framework.
+/// !Label: C.math.NET
+/// !Web: https://github.com/MachineCognitis/C.math.NET/
+//nuget C.math.NET
+
+// Deedle implements an efficient and robust frame and series data structures for manipulating with structured data.
+/// !Label: Deedle
+/// !Web: http://bluemountaincapital.github.io/Deedle/
+/// !Source: http://github.com/BlueMountainCapital/Deedle
+//nuget Deedle
+
+//  This package installs core Deedle package, together with an R type provider plugin which makes it possible to pass data frames and time series between R and Deedle
+/// !Label: Deedle.RPlugin
+/// !See:  Deedle
+//nuget Deedle.RPlugin
+
+// ExtCore provides extensions to the F# core library (FSharp.Core) and aims to help you build industrial-strength F# applications
+/// !Label: ExtCore
+/// !Web: https://github.com/jack-pappas/ExtCore
+//nuget ExtCore
+
+// FParsec is a parser combinator library for F#.
+/// !Label: FParsec
+/// !Web: http://www.quanttec.com/fparsec
+/// !Source: https://github.com/stephan-tolksdorf/fparsec
+//nuget FParsec-Big-Data-Edition
+
+// This library is an extension to the FParsec library
+/// !Label: FParsec-Pipes
+/// !Web: https://github.com/rspeele/FParsec-Pipes
+//nuget FParsec-Pipes
+
+// FsCheck is a tool for testing .NET programs automatically.
+/// !Label: FsCheck
+/// !Web: https://github.com/fscheck/FsCheck
+//nuget FsCheck
+
+// FsCheck.Xunit integrates FsCheck with xUnit.NET by adding a PropertyAttribute that runs FsCheck tests
+/// !Label: FsCheck.Xunit
+/// !See: FsCheck
+//nuget FsCheck.Xunit
+
+// FsPickler is a serialization library that facilitates the distribution of .NET objects
+/// !Label: FsPickler
+/// !Web: http://mbraceproject.github.io/FsPickler/
+//nuget FsPickler
+
+// Represent tabular data in visually appealing ASCII tables 
+/// !Label: FsPrettyTable
+/// !Web: http://tormaroe.github.io/FsPrettyTable/
+//nuget FsPrettyTable
+
+// For generating random numbers
+/// !Label: FsRandom
+/// !Web: http://kos59125.github.io/FsRandom/
+//nuget FsRandom
+
+// The F# Charting library (FSharp.Charting.dll) is a compositional library for creating charts from F#.
+/// !Label: FSharp.Charting
+/// !Web: https://fslab.org/FSharp.Charting/
+/// !Source: http://github.com/fslaborg/FSharp.Charting
+//nuget FSharp.Charting
+
+// The FSharp.Configuration project contains type providers for the configuration of .NET projects.
+/// !Label: FSharp.Configuration
+/// !Web: http://fsprojects.github.io/FSharp.Configuration/
+/// !Source: http://github.com/fsprojects/FSharp.Configuration
+//nuget FSharp.Configuration
+
+// Asynchronous sequences for F#
+/// !Label: FSharp.Control.AsyncSeq
+/// !Web: http://fsprojects.github.io/FSharp.Control.AsyncSeq/
+/// !Source: https://github.com/fsprojects/FSharp.Control.AsyncSeq
+//nuget FSharp.Control.AsyncSeq 
+
+// A F#-friendly wrapper for the Reactive Extensions.
+/// !Label: FSharp.Control.Reactive
+/// !Web: https://github.com/fsprojects/FSharp.Control.Reactive
+//nuget FSharp.Control.Reactive
+
+// The F# Data library (FSharp.Data.dll) implements everything you need to access data in your F# applications and scripts
+/// !Label: FSharp.Data
+/// !Web: http://fsharp.github.io/FSharp.Data/
+/// !Source: http://github.com/fsharp/FSharp.Data
+//nuget FSharp.Data
+
+// F# Type Providers for SqlDataConnection, SqlEntityConnection, ODataService, WsdlService and EdmxFile 
+/// !Label: FSharp.Data.TypeProviders
+/// !Web: https://github.com/fsprojects/FSharp.Data.TypeProviders
+//nuget FSharp.Data.TypeProviders
+
+/// !Label: FSharp.Data.Whitespace
+/// !See: FSharp.Data
+//nuget FSharp.Data.Whitespace
+
+// The FSharp.Management project contains various type providers for the management of the machine.
+/// !Label: FSharp.Management
+/// !Web: http://fsprojects.github.io/FSharp.Management/
+/// !Source: https://github.com/fsprojects/FSharp.Management
+//nuget FSharp.Management
+
+// PDF formatting from FSharp.Markdown
+/// !Label: FSharp.Markdown.Pdf
+/// !Web: https://github.com/theburningmonk/FSharp.Markdown.Pdf
+//nuget FSharp.Markdown.Pdf
+
+// The library FSharp.Plotly implements charting suitable for use from F# scripting.
+/// !Label: FSharp.Plotly
+/// !Web: http://muehlhaus.github.io/FSharp.Plotly/
+//nuget FSharp.Plotly
+
+// The FSharp.Text.RegexProvider project contains a type provider for regular expressions.
+/// !Label: FSharp.Text.RegexProvider
+/// !Web: http://fsprojects.github.io/FSharp.Text.RegexProvider/
+/// !Source: https://github.com/fsprojects/FSharp.Text.RegexProvider
+//nuget FSharp.Text.RegexProvider
+
+// FSharpx.Async is a collection of asynchronous programming utilities for F#.
+/// !Label: FSharpx.Async
+/// !Web: http://fsprojects.github.io/FSharpx.Async/
+/// !Source: https://github.com/fsprojects/FSharpx.Async
+//nuget FSharpx.Async
+
+// FSharpx.Collections is a collection of datastructures for use with F# and C#.
+/// !Label: FSharpx.Collections
+/// !Web: http://fsprojects.github.io/FSharpx.Collections/
+/// !Source: https://github.com/fsprojects/FSharpx.Collections
+//nuget FSharpx.Collections
+
+/// !Label: FSharpx.Collections.Experimental
+/// !See: FSharpx.Collections
+//nuget FSharpx.Collections.Experimental
+
+// FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library
+/// !Label: FSharpx.Core
+/// !Web: http://fsprojects.github.io/FSharpx.Extras/
+/// !Source: https://github.com/fsprojects/FSharpx.Extras
+//nuget FSharpx.Core
+
+// FSharpx.Extras implements general functional constructs on top of the F# core library
+/// !Label: FSharpx.Extras
+/// !Web: http://fsprojects.github.io/FSharpx.Extras/
+/// !Source: https://github.com/fsprojects/FSharpx.Extras
+//nuget FSharpx.Extras
+
+/// !Label: FSharpx.Text.StructuredFormat
+/// !See: FSharpx.Extras
+//nuget FSharpx.Text.StructuredFormat
+
+// FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library.
+/// !Label: FSharpx.TypeProviders.Management
+/// !Web: http://fsprojects.github.io/FSharpx.Extras/
+/// !Source: https://github.com/fsprojects/FSharpx.Extras
+//nuget FSharpx.TypeProviders.Management
+
+// FSharpx.Reflection is a collection of reflection utilities for F#.
+/// !Label: FSharpx.Reflection
+/// !Web: http://fsprojects.github.io/FSharpx.Reflection/
+/// !Source: https://github.com/fsprojects/FSharpx.Reflection
+//nuget FSharpx.Reflection
+
+// FsLab is a single package that gives you all you need for doing data science with F#. 
+/// !Label: FsLab
+/// !Web: https://fslab.org/
+/// !Source: 
+//nuget FsLab >= 1.0.2
+
+// This library is for the .NET platform implementing a state machine type provider
+/// !Label: GraphProvider
+/// !Web: http://fsprojects.github.io/GraphProvider/
+/// !Source: https://github.com/fsprojects/GraphProvider
+//nuget GraphProvider
+
+// Math.NET Filtering with finite and infinite impulse response filter design and application, median filtering and other signal processing methods and algorithms.
+/// !Label: MathNet.Filtering
+/// !Web: https://filtering.mathdotnet.com/
+/// !Source: https://github.com/mathnet/mathnet-filtering
+//nuget MathNet.Filtering
+
+// Math.NET Filtering: separate package with Kalman filter only.
+/// !Label: MathNet.Filtering.Kalman
+/// !See: MathNet.Numerics
+//nuget MathNet.Filtering.Kalman
+
+// Math.NET Numerics is the numerical foundation of the Math.NET project
+/// !Label: MathNet.Numerics
+/// !Web: https://numerics.mathdotnet.com/
+/// !Source: https://github.com/mathnet/mathnet-numerics
+//nuget MathNet.Numerics
+
+// Math.NET Numerics is the numerical foundation of the Math.NET project
+/// !Label: MathNet.Numerics.FSharp
+/// !See: MathNet.Numerics
+//nuget MathNet.Numerics.FSharp
+
+// Math.NET Spatial.
+/// !Label: MathNet.Spatial
+/// !Web: https://spatial.mathdotnet.com/
+/// !Source: https://github.com/mathnet/mathnet-spatial
+//nuget MathNet.Spatial
+
+// Math.NET Symbolics is a basic open source computer algebra library. 
+/// !Label: MathNet.Symbolics
+/// !Web: https://symbolics.mathdotnet.com/
+/// !Source: https://github.com/mathnet/mathnet-symbolics
+//nuget MathNet.Symbolics
+
+// Json.NET is a popular high-performance JSON framework for .NET
+/// !Label: Newtonsoft.Json
+/// !Web: http://www.newtonsoft.com/json
+/// !Source: https://github.com/JamesNK/Newtonsoft.Json
+//nuget Newtonsoft.Json
+
+// NLog is a logging platform for .NET with rich log routing and management capabilities
+/// !Label: NLog
+/// !Web: http://nlog-project.org/
+/// !Source: https://github.com/NLog/NLog/
+//nuget NLog
+
+// Xml file to get started with configuring NLog.
+/// !Label: NLog.Config
+/// !See: NLog 
+//nuget NLog.Config
+
+// Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient
+/// !Label: Node.js
+/// !Web: https://nodejs.org/en/
+//nuget Node.js
+
+// a package manager for node
+/// !Label: Npm.js
+/// !Web: https://github.com/giggio/npm-nuget
+//nuget Npm.js
+
+// A .NET interoperability library to access the R statistical package from .NET languages.
+/// !Label: R.NET.Community 
+/// !Web: http://rdotnet.codeplex.com/
+/// !Source: https://github.com/jmp75/rdotnet
+//nuget R.NET.Community 
+
+/// !Label: R.NET.Community.FSharp
+/// !See: R.NET.Community
+//nuget R.NET.Community.FSharp
+
+// An F# Type Provider providing strongly typed access to the R statistical package.
+/// !Label: RProvider
+/// !Web: http://bluemountaincapital.github.io/FSharpRProvider/
+/// !Source: https://github.com/BlueMountainCapital/FSharpRProvider
+//nuget RProvider
+
+// SpecFlow aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation
+/// !Label: SpecFlow
+/// !Web: http://specflow.org/
+/// !Source: https://github.com/techtalk/SpecFlow
+//nuget SpecFlow
+
+// Combined package to setup SpecFlow with xUnit easily
+/// !Label: SpecFlow.xUnit
+/// !See: SpecFlow
+//nuget SpecFlow.xUnit
+
+// Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.
+/// !Label: Suave
+/// !Web: https://suave.io/
+/// !Source: https://github.com/SuaveIO/suave
+//nuget Suave
+
+// F# Type Provider for Swagger.
+// The Swagger specification is a powerful definition format to describe RESTful APIs.
+/// !Label: SwaggerProvider
+/// !Web: http://fsprojects.github.io/SwaggerProvider/
+/// !Source: https://github.com/fsprojects/SwaggerProvider
+//nuget SwaggerProvider
+
+// Practical Generic Programming for F#
+/// !Label: TypeShape
+/// !Web: https://github.com/eiriktsarpalis/TypeShape
+//nuget TypeShape
+
+// XPlot is a cross-platform data visualization library that supports creating charts using Google Charts and Plotly
+/// !Label: XPlot.GoogleCharts
+/// !Web: http://tahahachana.github.io/XPlot/
+/// !Source: https://github.com/TahaHachana/XPlot
+//nuget XPlot.GoogleCharts
+
+/// !Label: XPlot.Plotly
+/// !See: XPlot.GoogleCharts
+//nuget XPlot.Plotly
+
+// xUnit.net is a developer testing framework, built to support Test Driven Development
+/// !Label: xunit
+/// !Web: https://github.com/xunit/xunit
+//nuget xunit
+
+// Includes the libraries for writing unit tests with xUnit.net.
+/// !Label: xunit.core
+/// !See: xunit
+//nuget xunit.core
+
+// Includes xunit.core.dll for extensibility purposes.
+/// !Label: xunit.extensibility.core
+/// !See: xunit
+//nuget xunit.extensibility.core
+
+// Includes xunit.execution.*.dll for extensibility purposes.
+/// !Label: xunit.extensibility.execution
+/// !See: xunit
+//nuget xunit.extensibility.execution
+
+// Console runner for the xUnit.net framework.
+/// !Label: xunit.runner.console
+/// !See: xunit
+//nuget xunit.runner.console
+
+// Visual Studio 2012+ Test Explorer runner for the xUnit.net framework
+/// !Label: xunit.runner.visualstudio
+/// !See: xunit
+//nuget xunit.runner.visualstudio
+
+// Should extensions for the XUnit framework
+/// !Label: xunit.should
+/// !Web: https://github.com/cprieto/xunit.should
+//nuget xunit.should
+
+group __CommandLineTools
+    source https://nuget.org/api/v2
+
+    // FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.
+    /// !Label: Fake
+    /// !Web: http://fsharp.github.io/FAKE/
+    /// !Source: https://github.com/fsharp/Fake
+    nuget FAKE >= 4.57.0
+
+    /// !Label: FAKE.Deploy.Lib
+    /// !See: Fake
+    nuget FAKE.Deploy.Lib >= 4.57.0
+
+    /// !Label: FAKE.Dotnet
+    /// !See: Fake
+    nuget FAKE.Dotnet 
+
+    /// !Label: Fake.GitBook
+    /// !Web: http://pocketberserker.github.io/FAKE.GitBook/en/index.html
+    /// !Source: https://github.com/pocketberserker/FAKE.GitBook
+    //nuget Fake.GitBook
+
+    // ILRepack is meant at replacing ILMerge / Mono.Merge
+    /// !Label: ILRepack
+    /// !Web: https://github.com/gluck/il-repack
+    //nuget ILRepack
+
+group __Compiler
+    source https://nuget.org/api/v2
+
+    // The F# compiler services package contains a custom build of the F# compiler that
+    // exposes additional functionality for implementing F# language bindings, additional
+    // tools based on the compiler or refactoring tools. The package also includes F#
+    // interactive service that can be used for embedding F# scripting into your applications.
+    /// !Label: FSharp.Compiler.Service
+    /// !Web: https://github.com/fsharp/FSharp.Compiler.Service
+    //nuget FSharp.Compiler.Service
+
+    // Easy infrastructure can replace F#'s AST at compile time.
+    /// !Label: FSharp.Expandable.Compiler.Core
+    /// !Web: https://github.com/fscx-projects/fscx
+    //nuget FSharp.Expandable.Compiler.Core
+
+// We keep the following separately, because it conflicts with other targets,
+// and we mostly care about the command line tool
+group __Fantomas
+    source https://nuget.org/api/v2
+
+    // This library aims at formatting F# source files based on a given configuration
+    // Should be used from FAKE
+    /// !Label: Fantomas
+    /// !Web: https://github.com/dungpa/fantomas
+    //nuget Fantomas
+
+    /// !Label: FantomasCLI
+    /// !See: Fantomas
+    //nuget FantomasCLI
+
+group __FsLint
+    source https://nuget.org/api/v2
+
+    // FSharpLint is a lint tool for F#.
+    /// !Label: FSharpLint.Core
+    /// !Web: http://fsprojects.github.io/FSharpLint/
+    //nuget FSharpLint.Core
+
+    // It provides an FSharpLint function in the namespace FSharpLint.Fake which when called will run the task
+    /// !Label: FSharpLint.Fake
+    /// !Web: http://fsprojects.github.io/FSharpLint/FAKE-Task.html
+    /// !SeeAlso: FSharpLint.Core
+    //nuget FSharpLint.Fake
+
+group __LiterateProgramming
+    source https://nuget.org/api/v2
+
+    // The package is a collection of libraries that can be used for literate programming with F#
+    /// !Label: FSharp.Formatting
+    /// !Web: https://github.com/tpetricek/FSharp.Formatting
+    //nuget FSharp.Formatting >= 2.14.3
+
+    /// !Label: FSharp.Formatting.CommandTool
+    /// !See: FSharp.Formatting
+    //nuget FSharp.Formatting.CommandTool
+
+    // This package contains a library for turning FsLab experiments written as script files into HTML and LaTeX reports.
+    /// !Label: FsLab.Runner
+    /// !See: FsLab
+    //nuget FsLab.Runner >= 1.0.2
+
+    // The core project of Visual F# Power Tools includes IDE-agnostic features intended to be used in different F# IDEs and editors.
+    /// !Label: FSharpVSPowerTools.Core
+    /// !Web: https://github.com/fsprojects/VisualFSharpPowerTools 
+    //nuget FSharpVSPowerTools.Core
