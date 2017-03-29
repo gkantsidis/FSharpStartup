@@ -179,6 +179,59 @@ source https://nuget.org/api/v2
 /// !Source: https://github.com/fsprojects/GraphProvider
 //nuget GraphProvider
 
+// ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code,
+// deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and
+// otherwise increase accuracy of ReSharper code inspections.
+/// !Label: JetBrains.Annotations
+/// !Web: https://www.jetbrains.com/help/resharper/10.0/Code_Analysis__Code_Annotations.html
+//nuget JetBrains.Annotations
+
+// dotMemory Unit is an additional unit testing framework that allows you to write tests that check code for all kinds of memory issues.
+/// !Label: JetBrains.DotMemoryUnit
+/// !Web: https://www.jetbrains.com/dotmemory/unit/
+//nuget JetBrains.DotMemoryUnit
+
+// ReSharper External Annotations for .NET framework and popular libraries.
+/// !Label: JetBrains.ExternalAnnotations
+/// !Web: https://github.com/JetBrains/ExternalAnnotations
+//nuget JetBrains.ExternalAnnotations
+
+// Standalone command line tools that enable running ReSharper inspections outside of Visual Studio
+/// !Label: JetBrains.ReSharper.CommandLineTools
+/// !Web: https://www.jetbrains.com/resharper/features/command-line.html
+//nuget JetBrains.ReSharper.CommandLineTools
+
+// JetBrains ReSharper SDK Package
+/// !Label: JetBrains.ReSharper.SDK
+/// !Web: https://www.jetbrains.com/help/resharper/sdk/README.html
+//nuget JetBrains.ReSharper.SDK
+
+// JetBrains ReSharper SDK Tests Package
+/// !Label: JetBrains.ReSharper.SDK.Tests
+/// !See: JetBrains.ReSharper.SDK
+//nuget JetBrains.ReSharper.SDK.Tests
+
+// Simple, flexible, interactive and powerful data visualization for .Net
+/// !Label: LiveCharts
+/// !Web: https://lvcharts.net/
+/// !Source: https://github.com/beto-rodriguez/Live-Charts
+//nuget LiveCharts
+
+// High performance package for Live-Charts
+/// !Label: LiveCharts.Geared
+/// !See: LiveCharts
+//nuget LiveCharts.Geared
+
+// Simple, flexible, interactive and powerful data visualization for UWP
+/// !Label: LiveCharts.Uwp
+/// !See: LiveCharts
+///nuget LiveCharts.Uwp
+
+// Simple, flexible, interactive and powerful data visualization for Wpf
+/// !Label: LiveCharts.Wpf
+/// !See: LiveCharts
+///nuget LiveCharts.Wpf
+
 // Math.NET Filtering with finite and infinite impulse response filter design and application, median filtering and other signal processing methods and algorithms.
 /// !Label: MathNet.Filtering
 /// !Web: https://filtering.mathdotnet.com/
@@ -239,6 +292,27 @@ source https://nuget.org/api/v2
 /// !Label: Npm.js
 /// !Web: https://github.com/giggio/npm-nuget
 //nuget Npm.js
+
+// OxyPlot is a plotting library for .NET. This is the portable core library that is referenced by the platform-specific OxyPlot packages.
+/// !Label: OxyPlot.Core
+/// !Web: http://www.oxyplot.org/
+/// !Source: https://github.com/oxyplot/oxyplot/
+//nuget OxyPlot.Core
+
+// OxyPlot is a plotting library for .NET. This package contains .pdf export extensions for .NET 4 (based on PDFsharp)
+/// !Label: OxyPlot.Pdf
+/// !See: OxyPlot.Core
+//nuget OxyPlot.Pdf
+
+// OxyPlot is a plotting library for .NET. This package targets WPF applications.
+/// !Label: OxyPlot.Wpf
+/// !See: OxyPlot.Core
+//nuget OxyPlot.Wpf
+
+// A set of extensions to OxyPlot which reduce the amount of code required to graph data.
+/// !Label: oxyplot-extensions
+/// !Web: https://github.com/a-h/oxyplot-extensions
+//nuget oxyplot-extensions
 
 // A .NET interoperability library to access the R statistical package from .NET languages.
 /// !Label: R.NET.Community 
