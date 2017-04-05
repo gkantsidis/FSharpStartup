@@ -1,0 +1,22 @@
+
+
+GROUP __CommandLineTools
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FAKE (4.57.4)
+    FAKE.Core (4.57.4)
+    FAKE.Deploy.Lib (4.57.4)
+      FAKE.Core (4.57.4)
+    FAKE.Dotnet (2.0)
+
+GROUP __Compiler
+
+
+GROUP __Fantomas
+
+
+GROUP __FsLint
+
+
+GROUP __LiterateProgramming
+

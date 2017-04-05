@@ -1,0 +1,13 @@
+{
+    "Summary" : "SHORT SUMMARY HERE",
+    "Description" : "DETAILED PROJECT DESCRIPTION",
+    "Authors" : [
+        "Author 1",
+        "Author 2"
+    ],
+    "Tags" : [
+        "Tag 1",
+        "Tag 2"
+    ],
+    "RepoHome" : "GIT HOME HERE"
+}
