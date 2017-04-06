@@ -270,7 +270,7 @@ source https://nuget.org/api/v2
 /// !Label: Newtonsoft.Json
 /// !Web: http://www.newtonsoft.com/json
 /// !Source: https://github.com/JamesNK/Newtonsoft.Json
-//nuget Newtonsoft.Json
+nuget Newtonsoft.Json
 
 // NLog is a logging platform for .NET with rich log routing and management capabilities
 /// !Label: NLog
