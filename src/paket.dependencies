@@ -1,5 +1,17 @@
 source https://nuget.org/api/v2
 
+// Optics library for F#. Useful for dealing with nested data structures.
+/// !Label: Aether
+/// !Web: https://xyncro.tech/aether
+/// !Source: https://github.com/xyncro/aether
+//nuget Aether
+
+// Library for working with arrow functions in F#
+/// !Label: Anat
+/// !Web: https://xyncro.tech/anat/
+/// !Source: https://github.com/xyncro/anat
+//nuget Anat
+
 // Type provider for Apiary.io
 /// !Label: ApiaryProvider
 /// !Web: http://fsprojects.github.io/ApiaryProvider/
@@ -10,6 +22,12 @@ source https://nuget.org/api/v2
 /// !Label: C.math.NET
 /// !Web: https://github.com/MachineCognitis/C.math.NET/
 //nuget C.math.NET
+
+// Chiron is a library for working with JSON for F#, similar to the Haskell Aeson package.
+/// !Label: Chiron
+/// !Web: https://xyncro.tech/chiron/
+/// !Source: https://github.com/xyncro/chiron
+//nuget Chiron
 
 // Deedle implements an efficient and robust frame and series data structures for manipulating with structured data.
 /// !Label: Deedle
@@ -37,6 +55,15 @@ source https://nuget.org/api/v2
 /// !Label: FParsec-Pipes
 /// !Web: https://github.com/rspeele/FParsec-Pipes
 //nuget FParsec-Pipes
+
+// Freya is a functional web programming stack designed to emphasise functional programming principles,
+// compositionality and high levels of safety and abstraction.
+/// !Label: Freya
+/// !Web: https://freya.io/
+/// !Source: https://github.com/xyncro/freya
+//nuget Freya
+//nuget Microsoft.Owin.SelfHost
+
 
 // FsCheck is a tool for testing .NET programs automatically.
 /// !Label: FsCheck
@@ -178,6 +205,18 @@ source https://nuget.org/api/v2
 /// !Web: http://fsprojects.github.io/GraphProvider/
 /// !Source: https://github.com/fsprojects/GraphProvider
 //nuget GraphProvider
+
+// An open source library for working with graphs (in the nodes and edges sense, rather than charting) in F#.
+/// !Label: Hekate
+/// !Web: https://xyncro.tech/hekate/
+/// !Source: https://github.com/xyncro/hekate
+//nuget Hekate
+
+// Machines for protocol interaction modelled by component graphs
+/// !Label: Hephaestus
+/// !Web: https://xyncro.tech/hephaestus/
+/// !Source: https://github.com/xyncro/hephaestus
+//nuget Hephaestus
 
 // ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code,
 // deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and
