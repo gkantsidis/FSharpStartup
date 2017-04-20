@@ -19,6 +19,10 @@ open Fake.ReleaseNotesHelper
 open Fake.UserInputHelper
 open Newtonsoft.Json
 
+
+// Default target configuration
+let configuration = "Release"
+
 (*
  * Read configuration variables
  *)
@@ -88,7 +92,47 @@ let hasFxCopCmd =
  *)
 
 Target "Clean" (fun _ ->
-        CleanDir buildDir
+    !! solutionFile |> MSBuildReleaseExt "" vsProjProps "Clean" |> ignore
+    CleanDirs ["bin"; "temp"; "docs/output"]
+)
+
+// Generate assembly info files with the right version & up-to-date information
+Target "AssemblyInfo" (fun _ ->
+    let getAssemblyInfoAttributes projectName =
+        [ Attribute.Title (projectName)
+          Attribute.Product project
+          Attribute.Description summary
+          Attribute.Version release.AssemblyVersion
+          Attribute.FileVersion release.AssemblyVersion
+          Attribute.Configuration configuration ]
+
+    let getProjectDetails projectPath =
+        let projectName = System.IO.Path.GetFileNameWithoutExtension(projectPath)
+        ( projectPath,
+          projectName,
+          System.IO.Path.GetDirectoryName(projectPath),
+          (getAssemblyInfoAttributes projectName)
+        )
+
+    !! "src/**/*.??proj"
+    |> Seq.map getProjectDetails
+    |> Seq.iter (fun (projFileName, projectName, folderName, attributes) ->
+        match projFileName with
+        | Fsproj -> CreateFSharpAssemblyInfo (folderName </> "AssemblyInfo.fs") attributes
+        | Csproj -> CreateCSharpAssemblyInfo ((folderName </> "Properties") </> "AssemblyInfo.cs") attributes
+        | Vbproj -> CreateVisualBasicAssemblyInfo ((folderName </> "My Project") </> "AssemblyInfo.vb") attributes
+        | Shproj -> ()
+        )
+)
+
+// Copies binaries from default VS location to expected bin folder
+// But keeps a subdirectory structure for each project in the
+// src folder to support multiple project outputs
+Target "CopyBinaries" (fun _ ->
+    !! "src/**/*.??proj"
+    -- "src/**/*.shproj"
+    |>  Seq.map (fun f -> ((System.IO.Path.GetDirectoryName f) </> "bin" </> configuration, "bin" </> (System.IO.Path.GetFileNameWithoutExtension f)))
+    |>  Seq.iter (fun (fromDir, toDir) -> CopyDir toDir fromDir (fun _ -> true))
 )
 
 Target "MYTARGET" (fun _ ->
