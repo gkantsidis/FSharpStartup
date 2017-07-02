@@ -1,11 +1,11 @@
 source https://nuget.org/api/v2
 
-github gkantsidis/FSharpStartup src/build.fsx
-github gkantsidis/FSharpStartup src/build.bat
-github gkantsidis/FSharpStartup src/build.ps1
-github gkantsidis/FSharpStartup src/Project.Description.json
-github gkantsidis/FSharpStartup src/RELEASE_NOTES.md
-github gkantsidis/FSharpStartup src/paket.dependencies
+//github gkantsidis/FSharpStartup src/build.fsx
+//github gkantsidis/FSharpStartup src/build.bat
+//github gkantsidis/FSharpStartup src/build.ps1
+//github gkantsidis/FSharpStartup src/Project.Description.json
+//github gkantsidis/FSharpStartup src/RELEASE_NOTES.md
+//github gkantsidis/FSharpStartup src/paket.dependencies
 
 // Optics library for F#. Useful for dealing with nested data structures.
 /// !Label: Aether
