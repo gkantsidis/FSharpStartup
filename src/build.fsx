@@ -49,7 +49,10 @@ let project =
 
 let release =
     let file = Path.Combine (projectTopDir, "RELEASE_NOTES.md")
-    LoadReleaseNotes file
+    if not (File.Exists file) then
+        failwith (sprintf "Cannot find RELEASE_NOTES.md file in %s" file)
+    else
+        LoadReleaseNotes file
 
 (*
  * Configure output directories
@@ -91,6 +94,9 @@ let hasFxCopCmd =
  * Build rules
  *)
 
+let solutionFile = "*.sln"
+let vsProjProps = []
+
 Target "Clean" (fun _ ->
     !! solutionFile |> MSBuildReleaseExt "" vsProjProps "Clean" |> ignore
     CleanDirs ["bin"; "temp"; "docs/output"]
@@ -99,8 +105,13 @@ Target "Clean" (fun _ ->
 // Generate assembly info files with the right version & up-to-date information
 Target "AssemblyInfo" (fun _ ->
     let getAssemblyInfoAttributes projectName =
+        let name, summary =
+            match project with
+            | Some project' -> project'.Summary, project'.Description
+            | None          -> "<Unknown project>", "<Unspecified description>"
+
         [ Attribute.Title (projectName)
-          Attribute.Product project
+          Attribute.Product name
           Attribute.Description summary
           Attribute.Version release.AssemblyVersion
           Attribute.FileVersion release.AssemblyVersion
@@ -145,12 +156,12 @@ Target "Default" (fun _ ->
         trace "Build completed"
 )
 
-Target "FxCop" (fun () ->  
-    !! (buildDir + @"\**\*.dll") 
-    ++ (buildDir + @"\**\*.exe") 
-    |> FxCop 
-        (fun p -> 
-            {p with 
+Target "FxCop" (fun () ->
+    !! (buildDir + @"\**\*.dll")
+    ++ (buildDir + @"\**\*.exe")
+    |> FxCop
+        (fun p ->
+            {p with
               // override default parameters
               ReportFileName = testDir + "FXCopResults.xml"
               //FailOnError = FxCopErrorLevel.CriticalWarning

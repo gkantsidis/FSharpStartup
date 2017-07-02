@@ -11,24 +11,24 @@ param(
     $Parallel = 1
 )
 
-DynamicParam {                                                                                                                         
-    # Set the dynamic parameters' name                                                                                                 
-    $ParameterName = 'Target'                                                                                                         
-                                                                                                                                       
-    # Create the dictionary                                                                                                            
-    $RuntimeParameterDictionary = New-Object -TypeName System.Management.Automation.RuntimeDefinedParameterDictionary                  
-                                                                                                                                       
-    # Create the collection of attributes                                                                                              
-    $AttributeCollection = New-Object -TypeName System.Collections.ObjectModel.Collection[System.Attribute]                            
-                                                                                                                                       
-    # Create and set the parameters' attributes                                                                                        
-    $ParameterAttribute = New-Object -TypeName System.Management.Automation.ParameterAttribute                                         
-    $ParameterAttribute.Mandatory = $false                                                                                              
-    $ParameterAttribute.Position = 1                                                                                                   
-                                                                                                                                       
+DynamicParam {
+    # Set the dynamic parameters' name
+    $ParameterName = 'Target'
+
+    # Create the dictionary
+    $RuntimeParameterDictionary = New-Object -TypeName System.Management.Automation.RuntimeDefinedParameterDictionary
+
+    # Create the collection of attributes
+    $AttributeCollection = New-Object -TypeName System.Collections.ObjectModel.Collection[System.Attribute]
+
+    # Create and set the parameters' attributes
+    $ParameterAttribute = New-Object -TypeName System.Management.Automation.ParameterAttribute
+    $ParameterAttribute.Mandatory = $false
+    $ParameterAttribute.Position = 1
+
     # Add the attributes to the attributes collection
     $AttributeCollection.Add($ParameterAttribute)
-                                                                                                                                       
+
     # Generate and set the ValidateSet
     if (Test-Path -Path $PSScriptRoot\packages\FAKE\tools\FAKE.exe) {
         $targetsraw = . "$PSScriptRoot\packages\FAKE\tools\FAKE.exe" --listTargets
@@ -40,12 +40,12 @@ DynamicParam {
     } else {
 
     }
-                                                                                      
-    # Create and return the dynamic parameter                                                                                          
+
+    # Create and return the dynamic parameter
     $RuntimeParameter = New-Object System.Management.Automation.RuntimeDefinedParameter($ParameterName, [string], $AttributeCollection)
-    $RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter)                                                                 
-    return $RuntimeParameterDictionary                                                                                                 
-}                                                                                                                                       
+    $RuntimeParameterDictionary.Add($ParameterName, $RuntimeParameter)
+    return $RuntimeParameterDictionary
+}
 
 Begin {
     $paket = Join-Path -Path $PSScriptRoot -ChildPath ".paket" | `
@@ -82,7 +82,7 @@ Process{
 
     $fake = Join-Path -Path $PSScriptRoot -ChildPath 'packages' | `
             Join-Path -ChildPath '__CommandLineTools' | `
-            Join-Path -ChildPath 'FAKE' | `            
+            Join-Path -ChildPath 'FAKE' | `
             Join-Path -ChildPath 'tools' | `
             Join-Path -ChildPath 'Fake.exe'
 
@@ -109,18 +109,18 @@ Process{
 
             if ($candidates.Length -gt 0) {
                 $candidate = $candidates[0]
-                Write-Verbose -Message "Candidate is $candidate"                
+                Write-Verbose -Message "Candidate is $candidate"
                 $path = $candidate.DirectoryName
                 Write-Verbose -Message "Will use FxCopCmd from $path"
                 $Env:Path += ";$path"
             } else {
                 Write-Error -Message "Cannot find FxCopCmd.exe; please add to path"
-                $IgnoreFxCop = $true            
+                $IgnoreFxCop = $true
             }
         } else {
             Write-Error -Message "Cannot find FxCopCmd.exe; please add to path"
             $IgnoreFxCop = $true
-        }    
+        }
     } else {
         Write-Verbose -Message "FxCopCmd.exe exists in path"
     }
@@ -132,7 +132,7 @@ Process{
     [string[]]$extraArgs = @()
 
     if ($Parallel -gt 1) {
-        $extraArgs += "parallel-jobs={0}" -f $Parallel        
+        $extraArgs += "parallel-jobs={0}" -f $Parallel
     }
 
     if ($IgnoreFxCop) {

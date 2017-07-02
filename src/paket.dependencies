@@ -1,5 +1,12 @@
 source https://nuget.org/api/v2
 
+github gkantsidis/FSharpStartup src/build.fsx
+github gkantsidis/FSharpStartup src/build.bat
+github gkantsidis/FSharpStartup src/build.ps1
+github gkantsidis/FSharpStartup src/Project.Description.json
+github gkantsidis/FSharpStartup src/RELEASE_NOTES.md
+github gkantsidis/FSharpStartup src/paket.dependencies
+
 // Optics library for F#. Useful for dealing with nested data structures.
 /// !Label: Aether
 /// !Web: https://xyncro.tech/aether
@@ -80,7 +87,7 @@ source https://nuget.org/api/v2
 /// !Web: http://mbraceproject.github.io/FsPickler/
 //nuget FsPickler
 
-// Represent tabular data in visually appealing ASCII tables 
+// Represent tabular data in visually appealing ASCII tables
 /// !Label: FsPrettyTable
 /// !Web: http://tormaroe.github.io/FsPrettyTable/
 //nuget FsPrettyTable
@@ -106,7 +113,7 @@ source https://nuget.org/api/v2
 /// !Label: FSharp.Control.AsyncSeq
 /// !Web: http://fsprojects.github.io/FSharp.Control.AsyncSeq/
 /// !Source: https://github.com/fsprojects/FSharp.Control.AsyncSeq
-//nuget FSharp.Control.AsyncSeq 
+//nuget FSharp.Control.AsyncSeq
 
 // A F#-friendly wrapper for the Reactive Extensions.
 /// !Label: FSharp.Control.Reactive
@@ -119,7 +126,7 @@ source https://nuget.org/api/v2
 /// !Source: http://github.com/fsharp/FSharp.Data
 //nuget FSharp.Data
 
-// F# Type Providers for SqlDataConnection, SqlEntityConnection, ODataService, WsdlService and EdmxFile 
+// F# Type Providers for SqlDataConnection, SqlEntityConnection, ODataService, WsdlService and EdmxFile
 /// !Label: FSharp.Data.TypeProviders
 /// !Web: https://github.com/fsprojects/FSharp.Data.TypeProviders
 //nuget FSharp.Data.TypeProviders
@@ -194,10 +201,10 @@ source https://nuget.org/api/v2
 /// !Source: https://github.com/fsprojects/FSharpx.Reflection
 //nuget FSharpx.Reflection
 
-// FsLab is a single package that gives you all you need for doing data science with F#. 
+// FsLab is a single package that gives you all you need for doing data science with F#.
 /// !Label: FsLab
 /// !Web: https://fslab.org/
-/// !Source: 
+/// !Source:
 //nuget FsLab >= 1.0.2
 
 // This library is for the .NET platform implementing a state machine type provider
@@ -299,7 +306,7 @@ source https://nuget.org/api/v2
 /// !Source: https://github.com/mathnet/mathnet-spatial
 //nuget MathNet.Spatial
 
-// Math.NET Symbolics is a basic open source computer algebra library. 
+// Math.NET Symbolics is a basic open source computer algebra library.
 /// !Label: MathNet.Symbolics
 /// !Web: https://symbolics.mathdotnet.com/
 /// !Source: https://github.com/mathnet/mathnet-symbolics
@@ -319,7 +326,7 @@ nuget Newtonsoft.Json
 
 // Xml file to get started with configuring NLog.
 /// !Label: NLog.Config
-/// !See: NLog 
+/// !See: NLog
 //nuget NLog.Config
 
 // Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient
@@ -354,10 +361,10 @@ nuget Newtonsoft.Json
 //nuget oxyplot-extensions
 
 // A .NET interoperability library to access the R statistical package from .NET languages.
-/// !Label: R.NET.Community 
+/// !Label: R.NET.Community
 /// !Web: http://rdotnet.codeplex.com/
 /// !Source: https://github.com/jmp75/rdotnet
-//nuget R.NET.Community 
+//nuget R.NET.Community
 
 /// !Label: R.NET.Community.FSharp
 /// !See: R.NET.Community
@@ -458,7 +465,7 @@ group __CommandLineTools
 
     /// !Label: FAKE.Dotnet
     /// !See: Fake
-    nuget FAKE.Dotnet 
+    nuget FAKE.Dotnet
 
     /// !Label: Fake.GitBook
     /// !Web: http://pocketberserker.github.io/FAKE.GitBook/en/index.html
@@ -534,5 +541,5 @@ group __LiterateProgramming
 
     // The core project of Visual F# Power Tools includes IDE-agnostic features intended to be used in different F# IDEs and editors.
     /// !Label: FSharpVSPowerTools.Core
-    /// !Web: https://github.com/fsprojects/VisualFSharpPowerTools 
+    /// !Web: https://github.com/fsprojects/VisualFSharpPowerTools
     //nuget FSharpVSPowerTools.Core
